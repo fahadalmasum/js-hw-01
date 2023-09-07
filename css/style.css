@@ -1,0 +1,98 @@
+/* Common css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: arial;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+/* Common css end */
+
+
+nav{
+    background-color: #ddd;
+    padding: 25px 0;
+}
+
+nav button{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar{
+    background-color: rgba(9, 9, 9, 0.228);
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.20s;
+}
+.sidebar.active{
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar_cnt{
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: 0.40s;
+}
+.sidebar.active .sidebar_cnt{
+    transform: translateX(0);
+}
+.logo{
+    width: 60%;
+}
+.menupart{
+    width: 40%;
+    text-align: right;
+}
+.menupart button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sidebar_cnt ul{
+    margin-top: 45px;
+    text-align: center;
+}
+.sidebar_cnt ul a{
+   color: black;
+   text-transform: capitalize;
+   margin-bottom: 20px;
+   display: block;
+
+}
